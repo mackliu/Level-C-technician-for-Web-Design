@@ -1,0 +1,80 @@
+ <style>
+ .meg{
+   background-color: #fdd;
+   border-spacing: 0;
+   margin:auto;
+   border:1px solid #555;
+ }
+ .meg td{
+   height:32px;
+   line-height: 22px;
+   padding:5px;
+   text-align: center;
+   border:1px solid #555;
+ }
+ .meg td:nth-child(1){
+   width:150px;
+ }
+ .meg td:nth-child(2){
+   width:350px;
+ }
+ .ct{
+   text-align: center;
+ }
+ .td1{
+   width:150px;
+   height:32px;
+   padding:5px 0;
+   border:1px solid #555;
+ }
+ .td2{
+   width:350px;
+   height:32px;
+   padding:5px 0;
+   border:1px solid #555;
+ }
+ </style>
+<table class="meg">
+  <tr>
+    <td>公司名稱</td>
+    <td>大家來購物有限公司</td>
+  </tr>
+  <tr>
+    <td>公司電子信箱</td>
+    <td>service@test.labor.gov.tw</td>
+  </tr>
+  <tr>
+    <td>服務項目</td>
+    <td>網路購物服務</td>
+  </tr>
+</table>
+<br><br>
+<form id="mgb">
+<table style="background:#ff9;margin:auto;border-spacing:0;border:1px solid #555;">
+  <tr>
+    <td class="ct td1">額戶姓名</td>
+    <td class="td2"><input type="text" width="20"></td>
+  </tr>
+  <tr>
+    <td class="ct td1">電子信箱</td>
+    <td class="td2"><input type="text" width="30"></td>
+  </tr>
+  <tr>
+    <td class="ct td1">意見留言</td>
+    <td class="td2"><textarea col='30' row='5'></textarea></td>
+  </tr>
+</table>
+<div class="ct">
+  <br>
+  <input type="submit" value="送出">&nbsp;&nbsp;
+  <input type="reset" value="重罝">
+</div>
+
+
+</form>
+<script>
+$("#mgb").submit(function(e){
+  e.preventDefault();
+  alert("歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！")
+})
+</script>

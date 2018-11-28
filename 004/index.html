@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>網路行銷購物網</title>
+  <script src="./js/jquery-2.1.4.min.js"></script>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+  .main{
+    width: 1024px;
+    height:768px;
+    margin:auto;
+
+  }
+  .mar{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    color:#00f;
+    font-size:19px;
+    background-image: url('./images/0402.jpg');
+    font-family: "標楷體";
+  }
+  .top{
+    width: 100%;
+    height:120px;
+    background-image: url('./images/0401.jpg');
+    font-size:52px;
+    font-family: "標楷體";
+    color:white;
+    text-shadow: 10px 10px 15px #333;
+    text-align: center;
+    line-height: 120px;
+  }
+  .top a:link{
+    color:white;
+    text-decoration: none;
+  }
+  .content{
+    width:100%;
+    height:540px;
+    
+    overflow: auto;
+  }
+  .footer{
+    width: 100%;
+    height:78px;
+    text-align: left;
+    color:white;
+    background-color:#660;
+    font-family: "標楷體";
+    line-height:32px;
+  }
+  .footer a:link{
+    color:#FFF;
+    text-decoration: none;
+  }
+  .footer a:visited{
+    color:#F99;
+  }
+  .items td{
+    height:150px;
+    text-align:center;
+    border:1px solid #555;
+  }
+  .items img{
+    height:150px;
+  }
+  table{
+    border-spacing: 0;
+    margin:auto;
+  }
+.items td:nth-child(1){
+  width:200px;
+}
+.items td:nth-child(n+2){
+  width:300px;
+
+}
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="top">
+      <a href="index.html">流行精品購物網站</a>
+    </div>
+    <div class="mar">
+        <marquee>
+            大家來購物網！精品商品特價大拍賣！要買要快！
+          </marquee>
+    </div>
+    
+    <div class="content">
+    <table class="items">
+      <tr>
+        <td><a href="javascript:lo('./results/purchase.html')">流行皮件</a></td>
+        <td><a href="javascript:lo('./results/leather1.html','#ff9')" target="_blank"><img src="./images/0403.jpg"></a></td>
+        <td><a href="javascript:lo('./results/leather2.html','#ff9')" target="_blank"><img src="./images/0404.jpg"></a></td>
+      </tr>
+      <tr>
+        <td>流行鞋區</td>
+        <td><img src="./images/0405.jpg"></td>
+        <td><img src="./images/0406.jpg"></td>
+      </tr>
+      <tr>
+        <td>流行飾品</td>
+        <td><img src="./images/0407.jpg"></td>
+        <td><img src="./images/0408.jpg"></td>
+      </tr>
+    </table>
+    </div>
+    <div class="footer">
+      <a href="javascript:lo('./results/message.html')">訪客留言版</a><br>
+      網頁設計及維護：XXOOO、最新新日期：yyyy/mm/dd
+    </div>
+
+
+
+  </div>
+  <embed src='./music/0401.mp3' style="width:0;height:0">
+</body>
+</html>
+<script>
+$('.content').css("background","url('./images/0402.jpg')");
+function lo(page,bg){
+  $('.content').load(page);
+  $('.content').css("background",bg)
+}
+</script>

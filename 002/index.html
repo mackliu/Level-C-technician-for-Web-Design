@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>勞動部勞動力發展署-運動廣場連結網</title>
+  <script src="./others/jquery-2.1.4.min.js"></script>
+   <style>
+   *{
+     margin:0px;
+     padding:0px;
+     box-sizing: border-box;
+
+   }
+   body{
+     background-color: #42413C;
+    
+   }
+   .wrap{
+     width:1024px;
+     height: 768px;
+     background: #FFF;
+     margin: auto;
+   }
+   .top{
+     width:1024px;
+     height:90px;
+     background-color: #00B0F0;
+     overflow: hidden;
+     line-height: 90px;
+     font-family: "標楷體";
+   }
+   .menu{
+     width:1024px;
+     height:25px;
+     line-height: 25px;
+     text-align: justify;
+     margin:-2px 0 0 0 ;
+     font-size:14px;
+   }
+   .content{
+     width:1024px;
+     height:608px;
+     font-size:14px;
+     color:#000000;
+     padding:20px;
+   }
+   .footer{
+     width:1024px;
+     height:45px;
+     background: #ccc;
+     font-size: 14px;
+     color:#fff;
+     text-align: center;
+      padding-top:8px;
+   }
+   .menu td{
+    width:14.2%;
+    text-align: center;
+    background: #EEE;
+    color:#000000;
+    text-decoration: none;
+   }
+   .menu td:hover{
+     background: #FF0;
+     font-size:14px;
+     font-weight: bolder;
+   }
+   .menu td a{
+     text-decoration: none;
+     display: inline-block;
+     width:100%;
+   }
+   </style>
+</head>
+<body>
+ <div class="wrap">
+    <div class="top">
+      <div style='width:180px;height:90px;float:left'>
+        <a href="index.html" title="運動廣場連結網-回首頁"><img src="./images/logo.png"  alt="運動廣場連結網-回首頁"></a>
+      </div>
+      <div style="text-align:center;width:844;text-shadow: 10px 10px 15px #333;color:#fff;font-size:52px;">
+        運動廣場連結網
+      </div>
+    </div>
+    <div class="menu">
+      <table style="width:100%;text-align: center;">
+        <tr>
+          <td><a href="index.html">首頁</a></td>
+          <td><a href="javascript:lo('./results/health.html')">健康天地</a></td>
+          <td><a href="javascript:lo('./results/basketball.html')">籃球介紹</a></td>
+          <td><a href="javascript:lo('./results/baseball.html')">棒球介紹</a></td>
+          <td><a href="javascript:lo('./results/swimming.html')">游泳介紹</a></td>
+          <td><a href="javascript:lo('./results/msgboard.html')">訪客留言</a></td>
+          <td><a href="javascript:lo('./results/reference.html')">資料來源</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="content">
+
+    </div>
+    <div class="footer">
+      網頁設計與誰護：XXOOO<BR>
+最近更新日期：yyyy/mm/dd
+    </div>
+ </div>
+<script>
+lo('./results/main.html')
+function lo(page){
+  $('.content').load(page);
+}  
+</script>
+</body>
+</html>

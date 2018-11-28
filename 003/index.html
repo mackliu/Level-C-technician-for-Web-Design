@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>國家公園介紹網</title>
+    <script src="./others/jquery-2.1.4.min.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+    .main{
+        width:1024px;
+        height:768px;
+        margin:auto;
+        padding:12px;
+    }
+    .top{
+        width:100%;
+        height:65px;
+        text-align:center;
+        background:#00f;
+    }
+    .left{
+        width:200px;
+        height:659px;
+        float:left;
+        background:#0ff;
+    }
+    .right{
+        width:800px;
+        height:659px;
+        float:right;
+    }
+    .footer{
+        width:100%;
+        height:20px;
+        text-align:center;
+        clear:both;
+    }
+    .marquee{
+        width:100%;
+        height:20px;
+    }
+    .content{
+        background: url('../images/park0301.jpg');
+        overflow: auto;
+        width:100%;
+        height:619px;
+    }
+    .source{
+        color:#f0f;
+        text-align: right;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        text-align: center;
+        margin:20px auto;
+    }
+    li img{
+        width:120px;
+        height:40px;
+        
+    }
+    li img:hover{
+        filter: invert(100%);
+    }
+    </style>
+
+</head>
+<body>
+<div class="main">
+<div class="top">
+<a href="index.html"><img src="./images/ani.gif"></a>
+</div>
+<div class="left">
+<ul>
+    <li><a href="javascript:lo('./park/yangmingshan.html','#ffc')"><img src="./images/park0302.jpg" alt="陽明山國家公園"  title="陽明山國家公園"></a></li>
+    <li><a href="javascript:lo('./park/sheipa.html','#ffc')"><img src="./images/park0303.jpg" alt="雪霸國家公園"  title="雪霸國家公園"></a></li>
+    <li><img src="./images/park0304.jpg" alt="太魯閣國家公園"  title="太魯閣國家公園"></li>
+    <li><img src="./images/park0305.jpg" alt="玉山國家公園"  title="玉山國家公園"></li>
+    <li><a href="./others/park.mp3" download>檔案下載</a></li>
+
+</ul>
+</div>
+<div class="right">
+    <div class="marquee">
+        <marquee>歡迎進入國家公園介紹網，本網站有詳細的國家公園介紹哦！</marquee>
+    </div>
+    <div class="content"> <img src="./images/national_park.jpg" alt=""  usemap="#tt" style="display:block;margin:auto;">
+      <map name="tt">
+        <area shape="rect" coords="214,50,343,76" href="javascript:lo('./park/yangmingshan.html','#ffc')" alt="">
+        <area shape="poly" coords="276.719,215.688 273.484,211.469 272,206.625 272,201 272.906,197.125 277,194.625 277,191 
+        279.188,187.875 283,186.75 283,182 287.063,178.75 290,177.5 290,181 290,183 293.25,183.813 300.75,183 308,183 312.875,185.25 
+        318.125,188.125 322.5,188.25 324.375,190.125 319.25,191.875 319.875,194.875 320.625,201.5 318.5,205.75 316.125,211.25 
+        311.5,215.688 306.75,219.875 301.875,222.875 296.375,223.625 288.875,224.5 281,220.125" href="javascript:lo('./park/sheipa.html','#ffc')">
+      </map>
+        <div class="source">資料來源：內政部營建署『臺灣的國家公園』網站</div>
+    </div>
+</div>
+<div class="footer">
+    網頁設計及維護:XXOOO、最新更新日期:yyyy/mm/dd
+</div>
+</div>
+    <embed src="./others/park.mp3" style="display:none">       
+</body>
+</html>
+<script>
+$('.content').css("background-image","url('./images/park0301.jpg')")
+function lo(page,bg){
+    $('.content').load(page)
+    $('.content').css("background",bg)
+}
+</script>

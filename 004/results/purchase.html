@@ -1,65 +1,37 @@
-<style>
-.pur{
-  background-color: #ff9;
-  margin:auto;
-  border-spacing: 0;
-}
-.pur tr:nth-child(odd){
-  height:100px;
-  line-height: 100px;
-  text-align: center;
-}
-.pur tr:nth-child(2){
-  height:150px;
-  text-align:center;
-}
-.pur td{
-  width:400px;
-  border:1px solid #555;
-}
-.pur img{
-  height:150px;
-}
-</style>
-<form>
-<table class="pur">
-  <tr>
-    <td>真皮皮包</td>
-    <td>真皮短夾</td>
-  </tr>
-  <tr>
-    <td><img src="./images/0403.jpg"></td>
-    <td><img src="./images/0404.jpg"></td>
-  </tr>
-  <tr>
-    <td>
-      <input type="radio" name="buy1" value="購買"  >&nbsp;購買&nbsp;&nbsp;
-      <input type="radio" name="buy1" value="不購買">&nbsp;不購買&nbsp;&nbsp;
-      <input type="radio" name="buy1" value="考慮中">&nbsp;考慮中
-    </td>
-    <td>
-      <input type="radio" name="buy2"  value="購買"   >&nbsp;購買&nbsp;&nbsp;
-      <input type="radio" name="buy2"  value="不購買" >&nbsp;不購買&nbsp;&nbsp;
-      <input type="radio" name="buy2"  value="考慮中" >&nbsp;考慮中
-    </td>
-  </tr>
-</table>
-<div style="text-align:center;">
-  <br>
-  <input type="submit" value="送出">&nbsp;&nbsp;
-  <input type="reset" value="重置">
-</div>
-
-
+<form name="form1">
+  <table class="pur">
+    <tr>
+      <td>真皮皮包</td>
+      <td>真皮短夾</td>
+    </tr>
+    <tr>
+      <td><img src="./images/0403.jpg"></td>
+      <td><img src="./images/0404.jpg"></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="radio" name="buy1" value="購買">&nbsp;購買&nbsp;&nbsp;
+        <input type="radio" name="buy1" value="不購買">&nbsp;不購買&nbsp;&nbsp;
+        <input type="radio" name="buy1" value="考慮中">&nbsp;考慮中
+      </td>
+      <td>
+        <input type="radio" name="buy2" value="購買">&nbsp;購買&nbsp;&nbsp;
+        <input type="radio" name="buy2" value="不購買">&nbsp;不購買&nbsp;&nbsp;
+        <input type="radio" name="buy2" value="考慮中">&nbsp;考慮中
+      </td>
+    </tr>
+  </table>
+  <div style="text-align:center;">
+    <br>
+    <input type="button" value="送出" onclick="msg()">&nbsp;&nbsp;
+    <input type="reset" value="重置">
+  </div>
 </form>
 <script>
-$('form').submit(function(e){
-  e.preventDefault();
-  let a=$("input[name='buy1']:checked").val();
-  let b=$("input[name='buy2']:checked").val();
-  let msg="流行皮件選購確認\n\n";
-  let str="●真皮皮包："+a+"\n●真皮短夾："+b;
-  confirm(msg+str)
-  })
-
+  function msg() {
+    str = "流行皮件選購確認\n\n";
+    str = str + "●真皮皮包：" + form1.buy1.value;
+    str = str + "\n●真皮短夾：" + form1.buy2.value;
+    confirm(str)
+  }
 </script>

@@ -1,0 +1,130 @@
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.main{
+width:1024px;
+height:768px;
+margin:auto;
+padding:12px;
+font-family: "標楷體";
+}
+.br{
+border:1px solid #333;
+}
+.top{
+width:100%;
+height:65px;
+text-align:center;
+background:#00f;
+}
+.left{
+width:200px;
+height:656px;
+float:left;
+background:#0ff;
+border-left: 1px solid #333;
+border-right: 1px solid #333;
+
+}
+.right{
+width:798px;
+height:656px;
+float:right;
+border-right:1px solid #333;
+}
+.footer{
+width:100%;
+height:21px;
+text-align:center;
+margin-top: -1px;
+clear:both;
+}
+.marquee{
+width:100%;
+height:29px;
+line-height: 29px;
+}
+.content{
+background: url('./images/park0301.jpg');
+overflow: auto;
+width:797px;
+height:627px;
+}
+.source{
+color:#f0f;
+text-align: right;
+}
+ul{
+list-style-type: none;
+}
+li{
+text-align: center;
+margin:20px auto;
+}
+li img{
+width:120px;
+height:40px;
+
+}
+li img:hover{
+filter: sepia(75);
+}
+.top a{
+display:block;
+width:63px;
+height:63px;
+margin:auto;
+background:url('./images/park0307.jpg') no-repeat center;
+background-size:cover;
+animation-name: header;
+animation-duration: 4s;
+animation-timing-function: step-end;
+animation-iteration-count: infinite;
+}
+@keyframes header{
+25%{
+background:url('./images/park0308.jpg') no-repeat center;
+background-size:cover;
+}
+50%{
+background:url('./images/park0309.jpg') no-repeat center;
+background-size:cover;
+}
+75%{
+background:url('./images/park0310.jpg') no-repeat center;
+background-size:cover;
+}
+100%{
+background:url('./images/park0307.jpg') no-repeat center;
+background-size:cover;
+}
+}
+.backhome{
+display:table;
+margin:auto;
+
+}
+.park{
+background:#ffc;
+padding:20px
+}
+.park img{
+display:block;
+margin:auto;
+}
+.yang{
+margin:20px auto;
+width:430px;
+font-size:13px;
+font-style: italic;
+font-weight:bold;
+font-family: '標楷體';
+color:#00f
+}
+.shei{
+text-align:left;
+margin:20px auto;
+width:80%;
+}

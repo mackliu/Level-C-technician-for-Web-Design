@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 1024px;
+  height: 768px;
+  margin: auto;
+
+}
+
+.mar {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #00f;
+  font-size: 19px;
+  background-image: url('./images/0402.jpg');
+  font-family: "標楷體";
+}
+
+.top {
+  width: 100%;
+  height: 120px;
+  background-image: url('./images/0401.jpg');
+  font-size: 52px;
+  font-family: "標楷體";
+  color: white;
+  text-shadow: 10px 10px 15px #333;
+  text-align: center;
+  line-height: 120px;
+}
+
+.top a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  width: 100%;
+  height: 540px;
+  overflow: auto;
+  background: url('./images/0402.jpg');
+}
+
+.footer {
+  width: 100%;
+  height: 78px;
+  text-align: left;
+  color: white;
+  background-color: #660;
+  font-family: "標楷體";
+  line-height: 32px;
+}
+
+.footer a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: #F99;
+}
+
+.items td {
+  height: 150px;
+  text-align: center;
+  border: 1px solid #555;
+}
+
+.items img {
+  height: 150px;
+}
+
+table {
+  border-spacing: 0;
+  margin: auto;
+}
+
+.items td:nth-child(1) {
+  width: 200px;
+}
+
+.items td:nth-child(n+2) {
+  width: 300px;
+
+}
+
+.meg {
+  background-color: #fdd;
+  border-spacing: 0;
+  margin: auto;
+  border: 1px solid #555;
+}
+
+.meg td {
+  height: 32px;
+  line-height: 22px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #555;
+}
+
+.meg td:nth-child(1) {
+  width: 150px;
+}
+
+.meg td:nth-child(2) {
+  width: 350px;
+}
+
+.ct {
+  text-align: center;
+}
+
+.td1 {
+  width: 150px;
+  height: 32px;
+  padding: 5px 0;
+  border: 1px solid #555;
+}
+
+.td2 {
+  width: 350px;
+  height: 32px;
+  padding: 5px 0;
+  border: 1px solid #555;
+}
+
+.pur {
+  background-color: #ff9;
+  margin: auto;
+  border-spacing: 0;
+}
+
+.pur tr:nth-child(odd) {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.pur tr:nth-child(2) {
+  height: 150px;
+  text-align: center;
+}
+
+.pur td {
+  width: 400px;
+  border: 1px solid #555;
+}
+
+.pur img {
+  height: 150px;
+}
+.leather{
+  background-color: #ff9;
+  color:#00f;
+  text-align:center;
+  font-family: '標楷體';
+  font-size:24px;
+}

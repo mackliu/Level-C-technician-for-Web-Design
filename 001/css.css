@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 1024px;
+  height: 768px;
+  margin: auto;
+  font-family: "標楷體";
+  padding: 2px 12px;
+}
+
+.br {
+  border: 1px solid #999;
+}
+
+.top {
+  width: 999px;
+  height: 65px;
+  margin-bottom: 4px;
+}
+
+.top img {
+  width: 100%;
+}
+
+.left {
+  width: 215px;
+  height: 673px;
+  float: left;
+}
+
+.right {
+  width: 781px;
+  height: 673px;
+  float: left;
+  margin-left: 2px;
+}
+
+.footer {
+  width: 999px;
+  clear: both;
+  height: 20px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+  height: 644px;
+  margin-bottom: 2px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.update {
+  width: 100%;
+  height: 25px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.mar {
+  width: 100%;
+  height: 29px;
+  margin-bottom: 2px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #00f;
+}
+
+.content {
+  width: 100%;
+  height: 640px;
+  background: url('./images/0101.jpg');
+  overflow: auto;
+}
+
+.menu a {
+  display: block;
+  width: 200px;
+  height: 35px;
+  background: url('./images/menu1.png');
+  margin: 3px auto;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.menu a:hover {
+  background: url('./images/menu2.png');
+}
+
+.menu h1 {
+  font-size: 24px;
+  width: 110px;
+  border-bottom: 1px solid #000;
+  line-height: 36px;
+  color: #f0f;
+  margin: 10px auto;
+}
+
+.history h1,
+.event h1 {
+  font-size: 18px;
+  color: #f00;
+  text-align: center;
+}
+
+.learning h1 {
+  font-size: 18px;
+  color: #0ff;
+  text-align: center;
+}
+
+.main {
+  padding: 15px;
+  text-align: center;
+}
+
+.main article {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #00f;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.learning .btns a {
+  display: table;
+  padding: 2px 5px;
+  margin: 20px auto;
+}
+
+.learning .btns a:hover {
+  background: #ccc;
+}
+
+.nav {
+  margin: 16px;
+}
+
+.nav a {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
+
+.history article {
+  white-space: pre-line;
+  font-size: 16px;
+  color: #f00;
+}
+
+.event article {
+  white-space: pre-line;
+  position: relative;
+  height: 200px;
+}
+
+.event article:nth-child(1) {
+  color: #00f;
+}
+
+.event article:nth-child(2) {
+  color: #F00;
+}
+
+.event article:nth-child(3) {
+  color: #0f0;
+}
+
+.event article:nth-child(4) {
+  color: #000;
+}
+
+.event .date {
+  margin: 14px auto;
+}
+
+.event .date a {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+
+.event article a {
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  padding: 90px 0;
+}

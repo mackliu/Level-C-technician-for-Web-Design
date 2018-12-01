@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+}
+
+.main {
+  background-color: #ffc;
+  width: 1024px;
+  height: 768px;
+  margin: auto;
+}
+
+.menu {
+  width: 150px;
+  height: 768px;
+  float: left;
+}
+
+.content {
+  width: 824px;
+  height: 718px;
+  float: right;
+  padding: 36px;
+  position: relative;
+}
+
+marquee {
+  width: 824px;
+  height: 50px;
+  float: right;
+  font-size: 24px;
+  font-family: "標楷體";
+  font-weight: bolder;
+  color: #f00;
+  text-align: center;
+  line-height: 50px;
+}
+.im {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+ul li:nth-child(2){
+  margin-bottom:20px;
+}
+ul li:nth-last-child(2) {
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: "新細明體";
+  color: #f00;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.title1{
+  animation: t1 4s step-end infinite;
+}
+.title2{
+  animation: t2 4s step-end infinite;
+}
+.title3{
+  animation: t3 4s step-end infinite;
+}
+.title4{
+  animation: t4 4s step-end infinite;
+}
+@keyframes t1 {
+  25% { stroke:#ff00ff;  }
+  50% { stroke:#00ffff;  }
+  75% { stroke:#00ff00;  }
+  100% { stroke: #0000ff; }
+}
+@keyframes t2 {
+  25% { stroke:#0000ff;  }
+  50% { stroke:#ff00ff;  }
+  75% { stroke:#00ffff;  }
+  100% { stroke: #00ff00; }
+}
+@keyframes t3 {
+  25% { stroke:#00ff00;  }
+  50% { stroke:#0000ff;  }
+  75% { stroke:#ff00ff;  }
+  100% { stroke: #00ffff; }
+}
+@keyframes t4 {
+  25% { stroke:#00ffff;  }
+  50% { stroke:#00ff00;  }
+  75% { stroke:#0000ff;  }
+  100% { stroke: #ff00ff; }
+}
+.albums {
+  background: url('./images/0509.jpg') no-repeat;
+  width: 191px;
+  height: 151px;
+  padding: 7px 7px 7px 8px;
+  position: absolute;
+}
+
+.albums img {
+  width: 175px;
+  height: 127px;
+}
+
+.icons {
+  width: 410px;
+  height: 50px;
+  margin: auto;
+}
+
+.icons img {
+  width: 60px;
+  height: 45px;
+  border: 3px solid #00f;
+}
+
+.icons img:nth-child(n+2) {
+  margin-left: 23px;
+}
+
+.icons img:hover {
+  border-color: #00ffff;
+  cursor: pointer;
+}
+
+.icons img:nth-child(5) {
+  margin-right: 0;
+}
+
+.photos {
+  position: relative;
+  margin: auto;
+  width: 610px;
+  height: 300px;
+}
+
+.album5 {
+  width: 500px;
+  margin: auto;
+}
+
+.album5 h1 {
+  font-size: 20px;
+  font-family: '標楷體';
+  font-weight: bolder;
+  text-decoration: #0000ff;
+  color: #00f;
+  text-align: center;
+}
+
+.album5 .big {
+  width: 410px;
+  height: 310px;
+  border: 5px solid #00f;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.album5 .big img {
+  width: 400px;
+  height: 300px
+}

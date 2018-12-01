@@ -1,18 +1,18 @@
-<div style="width:500px;margin:auto;">
-<div style="font-size:20px;font-family: '標楷體';font-weight: bolder;text-decoration:#0000ff;color:#00f;text-align: center;">蘭嶼賞魚去</div>
-<div class="big" style="width:410px;height:310px;border:5px solid #00f;margin:10px auto;">
-</div>
-<div class="icons">
-  <img src="./images/0551.jpg">
-  <img src="./images/0552.jpg">
-  <img src="./images/0553.jpg">
-  <img src="./images/0554.jpg">
-  <img src="./images/0555.jpg">
-</div>
+<div class="album5">
+  <h1>蘭嶼賞魚去</h1>
+  <div class="big">
+  </div>
+  <div class="icons">
+    <img src="./images/0551.jpg">
+    <img src="./images/0552.jpg">
+    <img src="./images/0553.jpg">
+    <img src="./images/0554.jpg">
+    <img src="./images/0555.jpg">
+  </div>
 </div>
 <script>
-$('.big').html("<img src='./images/0551.jpg' style='width:400px;height:300px'>")
-$('.icons img').click(function(){
- $('.big').html("<img src='"+$(this).attr("src")+"' style='width:400px;height:300px'>")
-})
+  $('.big').html("<img src='./images/0551.jpg'>")
+  $('.icons img').click(function () {
+    $('.big').html("<img src='" + $(this).attr("src") + "'>")
+  })
 </script>

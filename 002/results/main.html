@@ -1,122 +1,44 @@
-<style>
-  .news{
-    width:280px;
-    height:460px;
-    border:1px solid #999999;
-    display:inline-block;
-    margin-top:35px;
-  }
-  .main thead{
-    font-size:14px;
-    background: #3399ff;
-    color:#ffffff;
-    text-align: center;
-  }
-  .main thead th{
-    padding:5px 0;
-  }
-  .main td{
-    font-size:12px;
-    line-height:24px;
-    background: initial;
-  }
- .main td:nth-child(2){
-    width:90px;
-    text-align: center;
-  }
- .main td:nth-child(1){
-    width:190px;
-    text-align: left;
-  }
-  .main tbody tr:nth-child(odd){
-    background:#ffffCC;
-  }
-  .main tbody tr:nth-child(even){
-    background:#DDDDDD;
-  }
-
-  .images{
-    width:590px;
-    height:460px;
-    background:#333;
-    font-size:14px;
-    color:#ffff00;
-    display:inline-block;
-    vertical-align: top;
-    margin-left:80px;
-    margin-top:35px;
-  }
-  .images .big{
-    width:590px;
-    height:350px;
-    text-align: center;
-    padding-top:10px;
-  }
-  .big img{
-    width:570px;
-    height:330px;
-  }
-  .images .nav{
-    width:590px;
-    height:90px;
-    margin:auto;
-    text-align: center;
-  }
-  .images .nav .icon{
-    width:139px;
-    height:80px;
-    text-align: center;
-    display:inline-block;
-    cursor:pointer;
-  }
-</style>
-<div class="news">
-<p style="font-size:16px;text-align: left;font-weight: bold;margin:10px 0 10px 10px;">最新消息</p>
-<table class='main' style="width:95%;margin:auto;">
-  <thead>
-    <tr>
-      <th>主題</th>
-      <th>發布日期</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="./images/0201.png">公告全國技能競賽相關事宜</td>
-      <td>應檢當天日期</td>
-    </tr>
-    <tr>
-      <td><img src="./images/0201.png">公告即測即評及發證相關事宜</td>
-      <td>應檢當天日期</td>
-    </tr>
-    <tr>
-      <td><img src="./images/0201.png">公告網頁設計修題相關事宜</td>
-      <td>應檢當天日期</td>
-    </tr>
-    <tr>
-      <td><img src="./images/0201.png">公告網路架設應檢相關事宜</td>
-      <td>應檢當天日期</td>
-    </tr>
-  </tbody>
-</table>
-
-
-</div>
-<div class="images">
-  <div class="big">
-
-
+<div class="main">
+  <div class="news br">
+    <h1>最新消息</h1>
+    <table>
+      <tr>
+        <th>主題</th>
+        <th>發布日期</th>
+      </tr>
+      <tr>
+        <td><img src="./images/0201.png">公告全國技能競賽相關事宜</td>
+        <td>2011/11/30</td>
+      </tr>
+      <tr>
+        <td><img src="./images/0201.png">公告即測即評及發證相關事宜</td>
+        <td>2011/11/30</td>
+      </tr>
+      <tr>
+        <td><img src="./images/0201.png">公告網頁設計修題相關事宜</td>
+        <td>2011/11/30</td>
+      </tr>
+      <tr>
+        <td><img src="./images/0201.png">公告網路架設應檢相關事宜</td>
+        <td>2011/11/30</td>
+      </tr>
+    </table>
   </div>
-  <div class="nav">
-    <div class="icon" onclick="big('0202A.png')"><img src="./images/0202B.png"><br>第30屆倫敦奧運</div>
-    <div class="icon" onclick="big('0203A.png')"><img src="./images/0203B.png"><br>許淑淨奪舉重銀牌</div>
-    <div class="icon" onclick="big('0204A.png')"><img src="./images/0204B.png"><br>第26屆深圳世大運</div>
-    <div class="icon" onclick="big('0205A.png')"><img src="./images/0205B.png"><br>第27屆喀山世大運</div>
+  <div class="photos br">
+    <div class="big">
+      <img src="./images/0202A.png" alt="">
+    </div>
+    <div class="icons">
+      <div><img src="./images/0202A.png" alt=""><br>第30屆倫敦奧運</div>
+      <div><img src="./images/0203A.png" alt=""><br>許淑淨奪舉重銀牌</div>
+      <div><img src="./images/0204A.png" alt=""><br>第26屆深圳世大運</div>
+      <div><img src="./images/0205A.png" alt=""><br>第27屆喀山世大運</div>
+    </div>
   </div>
-
 </div>
 <script>
-function big(image){
-  $(".big").html("<img src='./images/"+image+"'>");
-}
-big('0202A.png')
+
+$('.icons img').click(function(){
+  $('.big').html("<img src='"+$(this).attr('src')+"'>")
+})
 </script>

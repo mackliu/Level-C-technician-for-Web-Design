@@ -1,0 +1,204 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #42413c;
+}
+#main{
+  width:1024px;
+  height:768px;
+  margin:auto;
+  background: #ffffff;
+}
+.br{
+  border: 1px solid #999;
+}
+.top{
+  width:100%;
+  height:90px;
+  background: #00b0f0;
+}
+.menu{
+  width:100%;
+  height:25px;
+  color:#000;
+  text-align: center;
+  line-height: 25px;
+  font-size:14px;
+}
+.menu a{
+  text-decoration: none;
+  background: #EEE;
+  display:block;
+  float:left;
+  width:145px;
+  margin-right: 1.5px;
+}
+.menu a:nth-last-child(1){
+  margin:0;
+}
+.menu a:hover{
+  background: #FF0;
+  color:#F00;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content{
+width:100%;
+height:608px;
+padding:20px;
+font-size:14px;
+overflow:auto;
+}
+.footer{
+  width:100%;
+  height:45px;
+  text-align: center;
+  color:white;
+  font-size: 14px;
+  background: #ccc;
+  padding-top:8px;
+}
+.nav{
+  color:#f00;
+  font-weight: bolder;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.news{
+  width:280px;
+  height:460px;
+  display:inline-block;
+  margin:20px;
+  vertical-align: top;
+
+}
+.photos{
+  width:590px;
+  height:460px;
+  display:inline-block;
+  margin:20px;
+  padding:5px;
+  background: #333;
+}
+.news h1{
+  font-size:16px;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 48px;
+
+}
+.news table{
+  margin:auto;
+  width:96%;
+}
+.news th{
+  text-align: center;
+  background:#3399ff;
+  color:#FFF;
+  line-height: 32px;
+  padding:0 5px;
+  font-size:14px;
+}
+.news td{
+  font-size:12px;
+  line-height:24px;
+  text-align: center;
+  padding:0 5px;
+}
+.news td:nth-child(1){
+  text-align: left;
+}
+.news tr:nth-child(odd){
+  background: #ffc;
+}
+.news tr:nth-child(even){
+  background: #DDD;
+}
+.big img{
+  width:100%;
+  height:320px;
+}
+.icons{
+  text-align: center;
+  font-size:14px;
+  color:#ff0;
+}
+.icons div{
+  display:inline-block;
+  width:24%;
+  height:110px;
+  padding:5px;
+}
+.icons div img{
+  width:100%;
+  height:100px;
+}
+.swimming{
+  background:url('./images/0207.png') no-repeat center;
+  min-height: 600px;
+
+}
+.swimming section{
+  font-size:16px;
+  line-height: 28px;
+}
+.swimming section article{
+  margin: 10px 0;
+}
+.basketball h4{
+color:#00f;
+margin:16px 0;
+
+}
+.basketball article{
+line-height: 28px;
+font-size:14px;
+}
+.baseball article{
+font-size:14px;
+line-height: 28px;
+margin:10px auto;
+}
+.msgboard table{
+border-spacing: 0;
+border:1px solid #DDD;
+margin:auto;
+}
+.msgboard table td{
+border:1px solid #DDD;
+padding:2px;
+}
+.msgboard table td:nth-child(1){
+width:120px;
+}
+.msgboard table td:nth-child(2){
+width:580px;
+}
+.health ul{
+list-style-type: none;
+overflow: hidden;
+}
+.health ul li{
+display:inline-block;
+float:left;
+background:#ddd;
+color:#000;
+cursor: pointer;
+width:x;
+border:1px solid #999;
+padding:5px;
+}
+.health article{
+background:#ddd;
+padding:10px;
+height:510px;
+margin:-1px 0 0 0;
+border:1px solid #999;
+display:none;
+line-height:20px;
+font-size:14px;
+overflow: auto;
+}

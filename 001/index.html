@@ -5,154 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="jquery-2.1.4.min.js"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: "標楷體";
-      box-sizing: border-box;
-    }
-
-    .wrap {
-      width: 1024px;
-      height: 766px;
-      margin: auto;
-      border: 1px solid #ccc;
-    }
-
-    .top {
-      width: 1000px;
-      height: 62px;
-      text-align: center;
-      margin:1px auto;
-      border:1px solid #ccc;
-    }
-
-    .menu {
-      width: 215px;
-      height: 652px;
-      display: inline-block;
-      font-weight: 500;
-      color: #000000;
-      font-size: 16px;
-      border: 1px solid #CCC;
-      margin: 1px 6px 1px 12px;
-      text-align: center;
-    }
-
-    .menu a {
-      background: url("./images/menu1.png");
-      display: inline-block;
-      width: 200px;
-      height: 35px;
-      line-height: 35px;
-      text-align: center;
-      margin: 2px auto;
-    }
-
-    .menu a:hover {
-      background: url("./images/menu2.png");
-    }
-
-    .update {
-      width: 215px;
-      height: 23px;
-      line-height: 23px;
-      text-align: center;
-      color: #000000;
-      font-size: 16px;
-      border: 1px solid #CCC;
-      margin: 1px 6px 1px 12px;
-    }
-
-    .mar {
-      width: 770px;
-      height: 29px;
-      font-size: 24px;
-      color: #00f;
-      border: 1px solid #CCC;
-      margin: 1px 12px 1px 6px;
-    }
-
-    .content {
-      width: 770px;
-      height: 647px;
-      border: 1px solid #CCC;
-      margin: 1px 12px 1px 6px;
-      overflow:auto;
-      background: url('./images/0101.jpg')
-    }
-
-    .footer {
-      width: 999px;
-      height: 20px;
-      text-align: center;
-      line-height: 20px;
-      margin: 1px auto;
-      border: 1px solid #ccc;
-      clear:both;
-      font-size:16px;
-    }
-
-    .left {
-      width: 233px;
-      height: 680px;
-      float: left;
-
-
-    }
-
-    .right {
-      width: 788px;
-      height: 680px;
-      float: right;
-    }
-    .club{
-    font-size:24px;
-    text-decoration: underline #000;
-    text-align: center;
-    color:#ff00ff;
-    width:200px;
-    height:40px;
-    }
-  </style>
+  <title>國立科技高中-校園社團介紹網</title>
+  <script src="./others/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-  <div class="wrap">
+  <div id="main" class="br">
     <div class="top">
-      <a href="index.html"><img src="./images/logo.png" alt="國立科技高中校園社團介紹網" title="國立科技高中校園社團介紹網"></a>
+      <a href="index.html"><img src="./images/logo.png" class="br"></a>
     </div>
     <div class="left">
-      <div class="menu">
-        <div class="club">社團介紹</div>
-        <a href="javascript:$('.content').load('guitar_history.html')">吉他社</a>
+      <div class="menu br">
+        <h1>社團介紹</h1>
+        <a href="javascript:lo('guitar_history.html')">吉他社</a>
         <a>熱舞社</a>
         <a>棒球社</a>
         <a>羽球社</a>
         <a>足球社</a>
         <a>童軍社</a>
       </div>
-      <div class="update">
-        最新更新日期:yyyy/mm/dd
+      <div class="update br">
+        最新更新日期：2018/11/30
       </div>
     </div>
     <div class="right">
-      <div class="mar">
-        <marquee style="width:100%;height:29px;">歡迎光臨校園介紹網，參觀後請支持社團活動並熱烈參與</marquee>
+      <div class="mar br">
+        <marquee>
+          歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與
+        </marquee>
       </div>
-      <div class="content">
-
+      <div class="content br">
       </div>
     </div>
-    <div class="footer">
-      網頁設計及維護：XXOOO
+    <div class="footer br">
+      網頁設計及維護：01王小明
     </div>
   </div>
-  <script>
-    $(".content").load("main.html");
-  </script>
 </body>
+
 </html>
+<script>
+  lo('main.html')
+
+  function lo(page) {
+    $('.content').load(page)
+  }
+</script>

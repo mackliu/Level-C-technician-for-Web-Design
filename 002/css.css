@@ -27,18 +27,15 @@ body{
   text-align: center;
   line-height: 25px;
   font-size:14px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu a{
   text-decoration: none;
   background: #EEE;
-  display:block;
-  float:left;
   width:145px;
-  margin-right: 1.5px;
-}
-.menu a:nth-last-child(1){
-  margin:0;
-}
+ }
+
 .menu a:hover{
   background: #FF0;
   color:#F00;
